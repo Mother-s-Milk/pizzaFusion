@@ -6,7 +6,7 @@
 </section>
 
 <section class="container section">
-<div class="gallery">
+    <div class="gallery">
         <div class="gallery-item">
             <img src="app/img/galeria1.webp" alt="Descripción de la foto 1">
         </div>

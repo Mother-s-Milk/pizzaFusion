@@ -1,4 +1,4 @@
-<section class="heading-page banner-page" style="background-image: url('app/img/heading-nosotros.webp');">
+<section class="heading-page" style="background-image: url('app/img/heading-nosotros.webp');">
     <div class="heading-page-content">
         <h2>Nuestra Historia</h2>
         <p>Con cada pizza, honramos nuestra tradición y pasión. Hechas a mano, con ingredientes frescos y el sabor auténtico del horno de leña.</p>

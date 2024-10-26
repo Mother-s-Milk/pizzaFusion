@@ -22,7 +22,8 @@
         <aside class="aside-filter-menu">
             <h2>Filtros</h2>
             <ul>
-                <li class="active"><button type="button" class="filter-button" data-filter="todas">Todas</button></li>
+                <!-- <li class="active"><button type="button" class="filter-button" data-filter="todas">Todas</button></li> -->
+                <li><button type="button" class="filter-button active" data-filter="todas">Todas</button></li>
                 <li><button type="button" class="filter-button" data-filter="1">Clásicas</button></li>
                 <li><button type="button" class="filter-button" data-filter="2">Carnívoras</button></li>
                 <li><button type="button" class="filter-button" data-filter="3">Gourmet</button></li>

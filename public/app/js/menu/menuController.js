@@ -76,28 +76,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });*/
 
     // Obtener todos los botones de filtro
+// let filtersLinks = document.querySelectorAll('.filter-button');
+
+// // Identificar el <li> que contiene el botón activo al cargar la página
+// let activeFilterLi = document.querySelector('.aside-filter-menu li.active');
+
+// // Recorrer cada botón de filtro
+// filtersLinks.forEach(filter => {
+//     // Asignar un evento de click a cada botón de filtro
+//     filter.onclick = () => {
+//         let parentLi = filter.parentElement;
+
+//         // Si el filtro seleccionado es diferente del actual, actualizar
+//         if (activeFilterLi !== parentLi) {
+//             // Remover la clase 'active' del <li> actual
+//             if (activeFilterLi) {
+//                 activeFilterLi.classList.remove('active');
+//             }
+            
+//             // Añadir la clase 'active' al nuevo <li> del filtro seleccionado
+//             parentLi.classList.add('active');
+//             // Actualizar la variable 'activeFilterLi'
+//             activeFilterLi = parentLi;
+
+//             // Obtener el id del filtro
+//             let filterId = filter.getAttribute('data-filter');
+
+//             // Llamar al controlador dependiendo del filtro seleccionado
+//             if (filterId === 'todas') {
+//                 menuController.fetchPizzas(); // Mostrar todas las pizzas
+//             } else {
+//                 menuController.filterById(filterId); // Filtrar por categoría
+//             }
+//         }
+//     };
+// });
+
 let filtersLinks = document.querySelectorAll('.filter-button');
 
 // Identificar el <li> que contiene el botón activo al cargar la página
-let activeFilterLi = document.querySelector('.aside-filter-menu li.active');
+let activeFilterLi = document.querySelector('.filter-button.active');
 
 // Recorrer cada botón de filtro
 filtersLinks.forEach(filter => {
     // Asignar un evento de click a cada botón de filtro
     filter.onclick = () => {
-        let parentLi = filter.parentElement;
+        //let parentLi = filter.parentElement;
 
         // Si el filtro seleccionado es diferente del actual, actualizar
-        if (activeFilterLi !== parentLi) {
+        if (activeFilterLi !== filter) {
             // Remover la clase 'active' del <li> actual
             if (activeFilterLi) {
                 activeFilterLi.classList.remove('active');
             }
             
             // Añadir la clase 'active' al nuevo <li> del filtro seleccionado
-            parentLi.classList.add('active');
+            filter.classList.add('active');
             // Actualizar la variable 'activeFilterLi'
-            activeFilterLi = parentLi;
+            activeFilterLi = filter;
 
             // Obtener el id del filtro
             let filterId = filter.getAttribute('data-filter');
@@ -112,7 +148,4 @@ filtersLinks.forEach(filter => {
     };
 });
 
-
-
 });
-

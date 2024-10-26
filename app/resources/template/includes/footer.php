@@ -1,5 +1,5 @@
 <footer class="principal-footer">
-    <div class="container section">
+    <div class="container">
         <div class="footer-content triple">
             <div class="newsletter-footer">
                 <h4>Newsletter</h4>

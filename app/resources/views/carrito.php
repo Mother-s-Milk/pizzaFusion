@@ -1,7 +1,7 @@
-<section class="heading-page banner-page" style="background-image: url('app/img/heading-nosotros.webp');">
+<section class="heading-page banner-page" style="background-image: url('app/img/heading-carrito.jpg');">
     <div class="heading-page-content">
-        <h2>Nuestra Historia</h2>
-        <p>Con cada pizza, honramos nuestra tradición y pasión. Hechas a mano, con ingredientes frescos y el sabor auténtico del horno de leña.</p>
+        <h2>Tu selección de pizzas está lista</h2>
+        <p>Revisa tu pedido y confirma las delicias que disfrutarás en tu próxima comida. Estamos listos para prepararlas con amor y enviarlas directo a tu mesa.</p>
     </div>
 </section>
 
@@ -75,7 +75,7 @@
                 <textarea name="" id="" placeholder="Comentario"></textarea>
             </div>
             <div>
-                <button type="button" class="btn btn-pedir" id="btn-pedir">Pedir ahora</button>
+                <button type="button" class="btn btn-pedir" id="btn-pedir">Enviar</button>
                 <button type="button" class="btn btn-cancelar" id="btn-cancelar">Cancelar</button>
             </div>
         </form>

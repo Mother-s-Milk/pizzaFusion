@@ -8,31 +8,32 @@
 <section class="container section">
     <header class="header-section">
         <h2>Reservá ahora, es fácil</h2>
-        <p>Podes hacer completando y enviando el siguiente formulario:</p>
+        <p>Podes hacerlo completando y enviando el siguiente formulario:</p>
     </header>
     <div class="section-content one">
-        <form class="form-reservation">
+        <form class="form-reservation" method="POST">
             <div>
-                <label for="">Nombre y Apellido:</label>
-                <input type="text" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
             </div>
             <div>
-                <label for="">Teléfono:</label>
-                <input type="tel" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
             </div>
             <div>
-                <label for="">Fecha:</label>
-                <input type="date" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
             </div>
             <div>
-                <label for="">Hora:</label>
-                <input type="time" required>
+                <input type="date" id="fecha" name="fecha" required>
             </div>
             <div>
-                <label for="">Comentarios:</label>
-                <textarea></textarea>
+                <input type="time" id="hora" name="hora" required>
             </div>
-            <button type="submit">Reservar</button>
+            <div>
+                <input type="number" id="personas" name="personas" min="1" max="20" placeholder="Número de personas" required>
+            </div>
+            <div>
+                <textarea id="comentario" placeholder="Peticiones especiales (opcional)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-reservacion">Reservar</button>
         </form>
     </div>
 </section>
