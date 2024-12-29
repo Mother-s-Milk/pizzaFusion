@@ -1,5 +1,6 @@
 <?php
-
+    #Aca defino constantes
+    
     //URL base de la aplicación
     define ("APP_URL", "http://localhost/pizzaFusion/public/");
 

@@ -1,6 +1,6 @@
-<footer class="principal-footer">
+<footer class="principal-footer section">
     <div class="container">
-        <div class="footer-content triple">
+        <div class="footer-content three">
             <div class="newsletter-footer">
                 <h4>Newsletter</h4>
                 <form>

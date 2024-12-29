@@ -58,7 +58,7 @@ const carritoController = {
             bodyCartProducts.innerHTML = '';
             let total = 0;
             let row;
-            let contador = 0;
+            let contador = 1;
             allProducts.forEach(producto => {
                 row = `
                     <tr>

@@ -1,12 +1,12 @@
-<section class="heading-page" style="background-image: url('app/img/heading-nosotros.webp');">
-    <div class="heading-page-content">
+<section class="encabezado-pagina" style="background-image: url('app/img/heading-nosotros.webp');">
+    <div class="encabezado-pagina-content">
         <h2>Nuestra Historia</h2>
         <p>Con cada pizza, honramos nuestra tradición y pasión. Hechas a mano, con ingredientes frescos y el sabor auténtico del horno de leña.</p>
     </div>
 </section>
 
 <section class="container section">
-    <div class="section-content double">
+    <div class="two" style="align-items:center;">
         <div class="about-details">
             <h2>Nuestra Historia</h2>
             <p>Desde una pequeña cocina hasta convertirnos en uno de los favoritos de la comunidad, nuestro viaje ha estado lleno de dedicación, pasión y compromiso con la calidad.</p>
@@ -17,10 +17,12 @@
     </div>
 </section>
 
-<hr class="divider-section">
+<div class="divisor-container">
+    <hr class="divisor">
+</div>
 
 <section class="container section">
-    <div class="section-content double">
+    <div class="two" style="align-items:center;">
         <div class="about-img">
             <img src="app/img/ingredientes.webp" alt="">
         </div>
@@ -31,18 +33,25 @@
     </div>
 </section>
 
-<hr class="divider-section">
+<div class="divisor-container">
+    <hr class="divisor">
+</div>
 
 <!-- Equipo -->
 <section class="container section">
     <header class="header-section">
         <h2>Conoce a Nuestro Equipo</h2>
     </header>
-    <div class="section-content double">
+    <div class="three"">
         <article class="member">
             <img src="app/img/man-chef.webp" alt="Chef Principal">
             <h3>Juan Pérez</h3>
             <p>Chef principal con 10 años de experiencia en la cocina artesanal.</p>
+        </article>
+        <article class="member">
+            <img src="app/img/marcelo.jpg" alt="Chef Principal">
+            <h3>Marcelo López</h3>
+            <p>Chef ejecutivo con 12 años de experiencia en alta cocina y especialista en gastronomía mediterránea.</p>
         </article>
         <article class="member">
             <img src="app/img/woman-chef.webp" alt="Sub Chef">
@@ -52,10 +61,12 @@
     </div>
 </section>
 
-<hr class="divider-section">
+<div class="divisor-container">
+    <hr class="divisor">
+</div>
 
 <section class="container section">
-    <div class="section-content double">
+    <div class="two" style="align-items:center;">
         <div class="about-details">
             <h2>El Secreto Detrás de Nuestras Pizzas</h2>
             <p>Todo comienza con nuestra receta secreta de masa, que fermenta por horas, y termina en el calor del horno de leña, aportando ese sabor ahumado único.</p>
@@ -66,7 +77,9 @@
     </div>
 </section>
 
-<hr class="divider-section">
+<div class="divisor-container">
+    <hr class="divisor">
+</div>
 
 <!-- Testimonios -->
 <!-- <section class="container section">
@@ -79,7 +92,7 @@
 
 <!-- Compromiso -->
 <section class="container section">
-    <div class="section-content double">
+    <div class="two" style="align-items:center;">
         <div class="about-img">
             <img src="app/img/sostenibilidad.webp" alt="">
         </div>

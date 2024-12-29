@@ -1,5 +1,5 @@
-<section class="heading-page banner-page" style="background-image: url('app/img/heading-carrito.jpg');">
-    <div class="heading-page-content">
+<section class="encabezado-pagina" style="background-image: url('app/img/heading-carrito.jpg');">
+    <div class="encabezado-pagina-content">
         <h2>Tu selección de pizzas está lista</h2>
         <p>Revisa tu pedido y confirma las delicias que disfrutarás en tu próxima comida. Estamos listos para prepararlas con amor y enviarlas directo a tu mesa.</p>
     </div>

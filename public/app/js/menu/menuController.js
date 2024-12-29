@@ -1,4 +1,3 @@
-//El botón de cada tarjeta debe tener un "agregar al carro" al hacer click que le pase el data de esa pizza
 let menuController = {
     pizzas: [],
     //Función para obtener las pizzas desde el servicio
