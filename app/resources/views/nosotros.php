@@ -1,4 +1,4 @@
-<section class="encabezado-pagina" style="background-image: url('app/img/heading-nosotros.webp');">
+<section class="encabezado-pagina" style="background-image: url('app/img/encabezado-nosotros.webp');">
     <div class="encabezado-pagina-content">
         <h2>Nuestra Historia</h2>
         <p>Con cada pizza, honramos nuestra tradición y pasión. Hechas a mano, con ingredientes frescos y el sabor auténtico del horno de leña.</p>
@@ -12,7 +12,7 @@
             <p>Desde una pequeña cocina hasta convertirnos en uno de los favoritos de la comunidad, nuestro viaje ha estado lleno de dedicación, pasión y compromiso con la calidad.</p>
         </div>
         <div class="about-img">
-            <img src="app/img/nuestra-historia.webp" alt="">
+            <img src="app/img/nosotros1.webp" alt="">
         </div>
     </div>
 </section>
@@ -44,17 +44,17 @@
     </header>
     <div class="three">
         <article class="member">
-            <img src="app/img/man-chef.webp" alt="Chef Principal">
+            <img src="app/img/chef1.webp" alt="Chef Principal">
             <h3>Juan Pérez</h3>
             <p>Chef principal con 10 años de experiencia en la cocina artesanal.</p>
         </article>
         <article class="member">
-            <img src="app/img/marcelo.jpg" alt="Chef Principal">
+            <img src="app/img/chef2.webp" alt="Chef Principal">
             <h3>Marcelo López</h3>
             <p>Chef ejecutivo con 12 años de experiencia en alta cocina y especialista en gastronomía mediterránea.</p>
         </article>
         <article class="member">
-            <img src="app/img/woman-chef.webp" alt="Sub Chef">
+            <img src="app/img/chef3.webp" alt="Sub Chef">
             <h3>María García</h3>
             <p>Subchef experta en ingredientes orgánicos y locales.</p>
         </article>

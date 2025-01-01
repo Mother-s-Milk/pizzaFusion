@@ -65,25 +65,25 @@
         </a>
         <a href="" class="pizza-link">
             <article class="pizza-tipo">
-                <img data-src="../public/app/img/carnivora.jpg" alt="Pizzas con variedad de carnes" loading="lazy">
+                <img data-src="../public/app/img/carnivora.webp" alt="Pizzas con variedad de carnes" loading="lazy">
                 <h3>Carnívoras</h3>
             </article>
         </a>
         <a href="" class="pizza-link">
             <article class="pizza-tipo">
-                <img data-src="../public/app/img/gourmet.jpg" alt="Pizzas gourmet con ingredientes exclusivos" loading="lazy">
+                <img data-src="../public/app/img/gourmet.webp" alt="Pizzas gourmet con ingredientes exclusivos" loading="lazy">
                 <h3>Gourmet</h3>
             </article>
         </a>
         <a href="" class="pizza-link">
             <article class="pizza-tipo">
-                <img data-src="../public/app/img/blanca.jpg" alt="Pizzas con salsa blanca o sin salsa" loading="lazy">
+                <img data-src="../public/app/img/blanca.webp" alt="Pizzas con salsa blanca o sin salsa" loading="lazy">
                 <h3>Blancas</h3>
             </article>
         </a>
         <a href="" class="pizza-link">
             <article class="pizza-tipo">
-                <img data-src="../public/app/img/veggie.jpg" alt="Pizzas vegetarianas con variedad de vegetales" loading="lazy">
+                <img data-src="../public/app/img/veggie.webp" alt="Pizzas vegetarianas con variedad de vegetales" loading="lazy">
                 <h3>Veggie</h3>
             </article>
         </a>
@@ -98,57 +98,17 @@
     <hr class="divisor">
 </div>
 
-<section class="container section animation-section">
-    <header class="header-section">
-        <h2>La más pedidas...</h2>
-    </header>
-    <div class="four">
-        <div class="mas-pedida-tarjeta">
-            <img src="../public/app/img/trufada.webp" alt="Pizza trufada con jamón crudo">
-            <h3>Pizza Trufada con Jamón Crudo</h3>
-            <p>$5.200</p>
-            <a class="a-button" data-pizza-id="${pizza.id}" data-pizza-nombre="${pizza.nombre}" data-pizza-precio="${pizza.precio}" data-pizza-imgPath="${pizza.imgPath}" aria-label="Agregar ${pizza.nombre} al carrito">Agregar al carro
-            </a>
-        </div>
-        <div class="mas-pedida-tarjeta">
-            <img src="../public/app/img/especial.webp" alt="Pizza especial">
-            <h3>Pizza Especial</h3>
-            <p>$7.800</p>
-            <a class="a-button" data-pizza-id="${pizza.id}" data-pizza-nombre="${pizza.nombre}" data-pizza-precio="${pizza.precio}" data-pizza-imgPath="${pizza.imgPath}" aria-label="Agregar ${pizza.nombre} al carrito">Agregar al carro
-            </a>
-        </div>
-        <div class="mas-pedida-tarjeta">
-            <img src="../public/app/img/tropical.jpg" alt="Pizza tropica con piña y jamón">
-            <h3>Pizza Tropical con Piña y Jamón</h3>
-            <p>$6.600</p>
-            <a class="a-button" data-pizza-id="${pizza.id}" data-pizza-nombre="${pizza.nombre}" data-pizza-precio="${pizza.precio}" data-pizza-imgPath="${pizza.imgPath}" aria-label="Agregar ${pizza.nombre} al carrito">Agregar al carro
-            </a>
-        </div>
-        <div class="mas-pedida-tarjeta">
-            <img src="../public/app/img/peperoni.jpg" alt="">
-            <h3>Pizza Pepperoni Picante</h3>
-            <p>$7.000</p>
-            <a class="a-button" data-pizza-id="${pizza.id}" data-pizza-nombre="${pizza.nombre}" data-pizza-precio="${pizza.precio}" data-pizza-imgPath="${pizza.imgPath}" aria-label="Agregar ${pizza.nombre} al carrito">Agregar al carro
-            </a>
-        </div>
-    </div>
-</section>
-
-<div class="divisor-container">
-    <hr class="divisor">
-</div>
-
 <section class="container section animation-section" id="contacto">
     <header class="header-section">
         <h2>¿Dónde estamos?</h2>
     </header>
     <div class="two" style="align-items: center;">
         <div class="info-contacto">
-            <div class="logo">
+            <!-- <div class="logo">
                 <a href="inicio" title="Volver al inicio">
                     <h1><span>Pizza</span><span>Fusión</span></h1>
                 </a>
-            </div>
+            </div> -->
             <p><i class="fa-solid fa-phone"></i>+54 383 4456789</p>
             <p><i class="fa-solid fa-location-dot"></i>Av. Virgen del Valle 504</p>
             <p><i class="fa-solid fa-envelope"></i>pizzaFusion@gmail.com</p>

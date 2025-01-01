@@ -1,4 +1,4 @@
-<section class="encabezado-pagina" style="background-image: url('app/img/heading-menu.webp');">
+<section class="encabezado-pagina" style="background-image: url('app/img/encabezado-menu.webp');">
     <div class="encabezado-pagina-content">
         <h2>Hechas con amor y los mejores ingredientes</h2>
         <p>Pizzas al horno de leña, cada una preparada a mano con nuestra receta secreta de masa.</p>

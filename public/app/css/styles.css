@@ -499,24 +499,17 @@ button:hover
     font-size: 21px;
 }
 
-.mas-pedida-tarjeta .a-button {
-    font-size: 18px;
-}
-
-.tarjeta-promocion .a-button,
-.mas-pedida-tarjeta .a-button {
+.tarjeta-promocion .a-button {
     background-color: rgba(255, 100, 0, 1);
     box-shadow: 0px 6px 3px rgba(0, 0, 0, 1);
     transition: background-color 0.2s ease;
 }
 
-.tarjeta-promocion .a-button:hover,
-.mas-pedida-tarjeta .a-button:hover {
+.tarjeta-promocion .a-button:hover {
     background-color: rgba(204, 85, 60, 1);
 }
 
-.tarjeta-promocion .a-button:active,
-.mas-pedida-tarjeta .a-button:active {
+.tarjeta-promocion .a-button:active {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
@@ -591,46 +584,15 @@ button:hover
 
 /*****************/
 /*****************/
-/*Las más pedidas*/
-/*****************/
-/*****************/
-.mas-pedida-tarjeta {
-    text-align: center;
-}
-
-.mas-pedida-tarjeta img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.mas-pedida-tarjeta h3 {
-    margin-bottom: 7.5px;
-    font-size: 21px; /*30px*/
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.mas-pedida-tarjeta p {
-    font-size: 1.3125rem; /*21px*/
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 7.5px;
-}
-
-/*****************/
-/*****************/
 /*Contact section*/
 /*****************/
 /*****************/
 .info-contacto {
     text-align: center;
-    background-color: rgba(0, 0, 0, 1);
+    /*background-color: rgba(0, 0, 0, 1);*/
     border-radius: 6px;
     padding: 30px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);*/
 }
 
 .info-contacto .logo h1 {
@@ -648,7 +610,7 @@ button:hover
     justify-content: center;
     font-size: 24px/*1.3125rem*/; /*21px*/
     font-weight: 400;
-    color: #eee;
+    color: #000;
     margin-bottom: 15px; /*9px*/
 }
 

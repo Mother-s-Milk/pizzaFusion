@@ -1,4 +1,4 @@
-<section class="encabezado-pagina" style="background-image: url('app/img/heading-carrito.jpg');">
+<section class="encabezado-pagina" style="background-image: url('app/img/encabezado-carrito.webp');">
     <div class="encabezado-pagina-content">
         <h2>Tu selección de pizzas está lista</h2>
         <p>Revisa tu pedido y confirma las delicias que disfrutarás en tu próxima comida. Estamos listos para prepararlas con amor y enviarlas directo a tu mesa.</p>
