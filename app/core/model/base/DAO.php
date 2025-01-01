@@ -3,6 +3,7 @@
     namespace app\core\model\base;
 
     class DAO {
+        
         protected $conn;
         protected $table;
 

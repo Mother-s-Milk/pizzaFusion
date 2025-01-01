@@ -15,7 +15,11 @@
                 <li><a href="#">Política de Privacidad</a></li>
             </ul>
             <div class="logo-footer">
-                <h1>Pizza<span>Fusión</span></h1>
+                <div class="logo">
+                    <a href="inicio" title="Volver al inicio">
+                        <h1><span>Pizza</span><span>Fusión</span></h1>
+                    </a>
+                </div>
                 <ul class="social-media-footer">
                     <li><a href="#" aria-label="Visítanos en Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href="#" aria-label="Visítanos en Instagram"><i class="fa-brands fa-instagram"></i></a></li>
@@ -27,7 +31,7 @@
         <hr class="footer-divisor">
         <div class="final-page">
             <div class="copy">
-                <p>©2024 PizzaFusión, Todos los derechos reservados</p>
+                <p>©2024 PizzaFusión - Todos los derechos reservados</p>
             </div>
             <div class="design">
                 <p>Diseñado y desarrollado por <a href="#">Franco Vera</a></p>

@@ -19,19 +19,31 @@
 
         public function save (array $object): void {
             $conn = Connection::get();
-            $dao = new UsuarioDAO($conn);
+            $dao = new EstiloDAO($conn);
             $dao->save(new EstiloDTO($object));
         }
 
+        public function load ($id): EstiloDTO {
+            $conn = Connection::get();
+            $dao = new EstiloDAO($conn);
+            return $dao->load($id);
+        }
+
         public function update (array $object): void {
+            $conn = Connection::get();
+            $dao = new EstiloDAO($conn);
+            $dao->update(new EstiloDTO($object));
         }
 
         public function delete ($id):void {
+            $conn = Connection::get();
+            $dao = new EstiloDAO($conn);
+            $dao->delete($id);
         }
 
         public function list (): array {
             $conn = Connection::get();
-            $dao = new UsuarioDAO($conn);
+            $dao = new EstiloDAO($conn);
             return $dao->list();
         }
         

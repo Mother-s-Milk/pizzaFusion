@@ -15,7 +15,7 @@
         }
 
         public function save (InterfaceDTO $object): void {
-            $sql = "INSERT INTO {$this->table} VALUES (DEFAULT, :nombre)";
+            $sql = "INSERT INTO {$this->table} VALUES (DEFAULT, :nombre, :descripcion)";
             $stmt = $this->conn->prepare($sql);
             $data = $object->toArray();
             unset($data["id"]);
@@ -23,8 +23,18 @@
             $object->setId((int)$this->conn->lastInsertId());
         }
 
+        public function load ($id): InterfaceDTO {
+            $sql = "SELECT * FROM {$this->table} WHERE id = :id";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute(["id" => $id]);
+
+            $data = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+            return new EstiloDTO($data);
+        }
+
         public function update (InterfaceDTO $object): void {
-            $sql = "UPDATE {$this->table} SET nombre = :nombre WHERE id = :id";
+            $sql = "UPDATE {$this->table} SET nombre = :nombre, descripcion = :descripcion WHERE id = :id";
             $stmt = $this->conn->prepare($sql);
             $stmt->execute($object->toArray());
         }
@@ -32,9 +42,14 @@
         public function delete ($id): void {
             $sql = "DELETE FROM {$this->table} WHERE id = :id";
             $stmt = $this->conn->prepare($sql);
-            $stmt->execute([
-                "id" => $id
-            ]);
+            $stmt->execute(["id" => $id]);
+        }
+
+        public function list (): array {
+            $sql = "SELECT * FROM {$this->table}";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute();
+            return $stmt->fetchAll(\PDO::FETCH_ASSOC);
         }
 
     }

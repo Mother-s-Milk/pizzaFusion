@@ -1,3 +1,5 @@
+//Deberia hacer un controller para obtener las promociones, estilos y mas vendidas.
+
 document.addEventListener('DOMContentLoaded', () => {
     const btnHero = document.getElementById('btn-hero');
     //Añade un pequeño "bounce" al botón CTA cada cierto tiempo

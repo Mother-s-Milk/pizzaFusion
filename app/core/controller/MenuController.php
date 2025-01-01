@@ -20,10 +20,16 @@
         }
 
         public function index (): void {
-            //$service = new MenuService();
-            //$data = $service->list();
             $this->view = "menu.php";
             require_once APP_TEMPLATE . "template.php";
+        }
+
+        public function obtenerPizzas (Request $request, Response $response): void {
+            $service = new MenuService();
+            $pizzas = $service->obtenerPizzas();
+
+            $response->setResult($pizzas);
+            $response->send();
         }
 
     }

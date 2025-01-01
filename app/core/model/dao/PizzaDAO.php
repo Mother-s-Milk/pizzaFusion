@@ -15,11 +15,24 @@
         }
 
         public function save (InterfaceDTO $object): void {
-            $sql = "INSERT INTO {$this->table} VALUES (DEFAULT, :nombre, :descripcion, :estiloId, :precio, :imgPath)";
+            $sql = "INSERT INTO {$this->table} VALUES (DEFAULT, :nombre, :descripcion, :estiloId, :precio, NOW(), 1, :imgPath)";
             $stmt = $this->conn->prepare($sql);
             $data = $object->toArray();
             unset($data["id"]);
+            unset($data["fechaAlta"]);
+            unset($data["estado"]);
             $stmt->execute($data);
+            $object->setId((int)$this->conn->lastInsertId());
+        }
+
+        public function load ($id): InterfaceDTO {
+            $sql = "SELECT * FROM {$this->table} WHERE id = :id";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute(["id" => $id]);
+
+            $data = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+            return new PizzaDTO($data);
         }
 
         public function update (InterfaceDTO $object): void {
@@ -28,13 +41,15 @@
         public function delete ($id): void {
             $sql = "DELETE FROM {$this->table} WHERE id = :id";
             $stmt = $this->conn->prepare($sql);
-            $stmt->execute([
-                "id" => $id
-            ]);
+            $stmt->execute(["id" => $id]);
+
+            if ($stmt->rowCount() === 0) {
+                throw new \Exception("No se encontró la pizza con ID {$id}.");
+            }
         }
 
         public function list (): array {
-            $sql = "SELECT id, nombre, descripcion, estiloId, precio, imgPath FROM {$this->table}";
+            $sql = "SELECT id, nombre, descripcion, estiloId, precio, fechaAlta, estado, imgPath FROM {$this->table}";
             $stmt = $this->conn->prepare($sql);
             $stmt->execute();
             return $stmt->fetchAll(\PDO::FETCH_ASSOC);

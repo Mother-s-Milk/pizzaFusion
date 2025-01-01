@@ -23,12 +23,38 @@
             $response->send();
         }
 
-        public function update (): void {
-            echo 'CONTROLLER => UPDATE <br>';
+        public function load (Request $request, Response $response): void {
+            $service = new EstiloService();
+            $estilo = $service->load($request->getId());
+
+            $response->setResult($estilo->toArray());
+            $response->setMessage("El estilo se cargó correctamente");
+            $response->send();
         }
 
-        public function delete (): void {
-            echo 'CONTROLLER => DELETE <br>';
+        public function update (Request $request, Response $response): void {
+            $data = $request->getData();
+
+            $service = new EstiloService();
+            $service->update($data);
+
+            $response->setMessage("El estilo se actualizo correctamente.");
+            $response->send();
+        }
+
+        public function delete (Request $request, Response $response): void {
+            $service = new EstiloService();
+            $service->delete($request->getId());
+            $response->setMessage('Estilo eliminado correctamente.');
+            $response->send();
+        }
+
+        public function list(Request $request, Response $response): void {
+            $service = new EstiloService();
+            $data = $service->list();
+        
+            $response->setResult($data);
+            $response->send();
         }
     }
 

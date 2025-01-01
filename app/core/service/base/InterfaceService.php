@@ -8,6 +8,8 @@
 
         public function save (array $object): void;
 
+        public function load ($id): InterfaceDTO;
+
         public function update (array $object): void;
 
         public function delete ($id): void;

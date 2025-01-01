@@ -8,7 +8,7 @@
 <section class="container section">
     <div class="two" style="align-items:center;">
         <div class="about-details">
-            <h2>Nuestra Historia</h2>
+            <h2>Nuestra historia</h2>
             <p>Desde una pequeña cocina hasta convertirnos en uno de los favoritos de la comunidad, nuestro viaje ha estado lleno de dedicación, pasión y compromiso con la calidad.</p>
         </div>
         <div class="about-img">
@@ -27,7 +27,7 @@
             <img src="app/img/ingredientes.webp" alt="">
         </div>
         <div class="about-details">
-            <h2>Nuestros Valores</h2>
+            <h2>Nuestros valores</h2>
             <p>En PizzaFusión, creemos en la autenticidad de cada plato y en el uso de ingredientes frescos y de origen local. Cada pizza refleja nuestro amor por la cocina.</p>
         </div>
     </div>
@@ -40,9 +40,9 @@
 <!-- Equipo -->
 <section class="container section">
     <header class="header-section">
-        <h2>Conoce a Nuestro Equipo</h2>
+        <h2>Conoce a nuestro equipo</h2>
     </header>
-    <div class="three"">
+    <div class="three">
         <article class="member">
             <img src="app/img/man-chef.webp" alt="Chef Principal">
             <h3>Juan Pérez</h3>
@@ -68,7 +68,7 @@
 <section class="container section">
     <div class="two" style="align-items:center;">
         <div class="about-details">
-            <h2>El Secreto Detrás de Nuestras Pizzas</h2>
+            <h2>El secreto detrás de nuestras pizzas</h2>
             <p>Todo comienza con nuestra receta secreta de masa, que fermenta por horas, y termina en el calor del horno de leña, aportando ese sabor ahumado único.</p>
         </div>
         <div class="about-img">
@@ -81,15 +81,6 @@
     <hr class="divisor">
 </div>
 
-<!-- Testimonios -->
-<!-- <section class="container section">
-    <h2>Lo Que Dicen Nuestros Clientes</h2>
-    <blockquote>"La mejor pizza que he probado, definitivamente vuelvo". - Ana, cliente habitual.</blockquote>
-    <blockquote>"Increíble sabor, nunca falla". - Carlos, cliente leal.</blockquote>
-</section>
-
-<hr class="divider-section"> -->
-
 <!-- Compromiso -->
 <section class="container section">
     <div class="two" style="align-items:center;">
@@ -97,18 +88,8 @@
             <img src="app/img/sostenibilidad.webp" alt="">
         </div>
         <div class="about-details">
-            <h2>Compromiso con el Medio Ambiente</h2>
+            <h2>Compromiso con el medio ambiente</h2>
             <p>Usamos envases ecológicos y trabajamos con productores locales para garantizar ingredientes frescos y sostenibles.</p>
         </div>
     </div>
 </section>
-
-<!-- Galería -->
-<!-- <section class="container section">
-    <h2>Nuestra Historia en Imágenes</h2>
-    <div class="gallery-images">
-        <img src="gallery1.jpg" alt="Imagen del proceso de preparación de la pizza">
-        <img src="gallery2.jpg" alt="Nuestro equipo">
-        <img src="gallery3.jpg" alt="Horno de leña">
-    </div>
-</section> -->

@@ -22,10 +22,22 @@
             $dao->save(new PizzaDTO($object));
         }
 
+        public function load ($id): PizzaDTO {
+            $conn = Connection::get();
+            $dao = new PizzaDAO($conn);
+            return $dao->load($id);
+        }
+
         public function update (array $object): void {
+            $conn = Connection::get();
+            $dao = new PizzaDAO($conn);
+            $dao->update(new PizzaDTO($object));
         }
 
         public function delete ($id): void {
+            $conn = Connection::get();
+            $dao = new PizzaDAO($conn);
+            $dao->delete($id);
         }
 
         public function list (): array {

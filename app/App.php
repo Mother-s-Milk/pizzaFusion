@@ -4,7 +4,6 @@
 
     use app\core\middleware\Pipeline;
     use app\core\middleware\ExceptionHandlerMiddleware;
-    //use app\core\middleware\InitializationMiddleware;
     use app\core\middleware\RoutingMiddleware;
 
     use app\libs\request\Request;
@@ -19,7 +18,6 @@
             $pipeline = new Pipeline();
 
             $pipeline->pipe(new ExceptionHandlerMiddleware());
-            //$pipeline->pipe(new InitializationMiddleware());
             $pipeline->pipe(new RoutingMiddleware());
 
             $pipeline->process(new Request(), new Response());

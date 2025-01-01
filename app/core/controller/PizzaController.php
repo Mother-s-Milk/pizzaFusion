@@ -23,20 +23,38 @@
             $response->send();
         }
 
-        public function update (): void {
-            echo 'CONTROLLER => UPDATE <br>';
+        public function load (Request $request, Response $response): void {
+            $service = new PizzaService();
+            $pizza = $service->load($request->getId());
+
+            $response->setResult($pizza->toArray());
+            $response->setMessage("La pizza se cargó correctamente");
+            $response->send();
         }
 
-        public function delete (): void {
-            echo 'CONTROLLER => DELETE <br>';
+        public function update (Request $request, Response $response): void {
+            $data = $request->getData();
+
+            $service = new PizzaService();
+            $service->update($data);
+
+            $response->setMessage("La pizza se actualizo correctamente.");
+            $response->send();
         }
 
-        public function list (): void {
+        public function delete (Request $request, Response $response): void {
+            $service = new PizzaService();
+            $service->delete($request->getId());
+            $response->setMessage('Pizza eliminada correctamente.');
+            $response->send();
+        }
+
+        public function list (Request $request, Response $response): void {
             $service = new PizzaService();
             $pizzas = $service->list();
 
-            header('Content-Type: application/json; charset=UTF-8');
-            echo json_encode($pizzas); //Envía las pizzas como un JSON
+            $response->setResult($pizzas);
+            $response->send();
         }
 
         public function filterById (Request $request, Response $response): void {

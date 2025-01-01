@@ -1,6 +1,6 @@
 <section class="encabezado-pagina" style="background-image: url('app/img/heading-menu.webp');">
     <div class="encabezado-pagina-content">
-        <h2>Hechas con Amor y los Mejores Ingredientes</h2>
+        <h2>Hechas con amor y los mejores ingredientes</h2>
         <p>Pizzas al horno de leña, cada una preparada a mano con nuestra receta secreta de masa.</p>
     </div>
 </section>
@@ -22,7 +22,7 @@
     </header>
     <div class="section-menu">
         <aside class="aside-filter-menu">
-            <h2>Filtros</h2>
+            <!-- <h2>Filtros:</h2> -->
             <ul>
                 <li><button type="button" class="filter-button active" data-filter="todas">Todas</button></li>
                 <li><button type="button" class="filter-button" data-filter="1">Clásicas</button></li>

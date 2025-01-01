@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.principal-header');
+    const headerPrincipal = document.querySelector('.principal-header');
+    const navContainer = document.querySelector('.navigation-container');
+
     function checkScrollAndAnimations () {
         const scrollPosition = window.scrollY;
 
         if (scrollPosition > 0) { //Cambia el valor según necesites
-            header.classList.add('scrolled');
+            headerPrincipal.classList.add('scrolled');
+            navContainer.classList.add('scrolled');
         } else {
-            header.classList.remove('scrolled');
+            headerPrincipal.classList.remove('scrolled');
+            navContainer.classList.remove('scrolled');
         }
 
         const animationSections = document.querySelectorAll('.animation-section');
@@ -50,18 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     lazyImages.forEach(img => {
         img.src = img.dataset.src;
     });
-
-    //Función para actualizar el tamaño de la pantalla. Esto no sirve para otra cosa que para cuando se hace pruebas de responsive.
-    /*function updateScreenSize() {
-        if (window.innerWidth > 1215) {
-            closeMenu();
-        }
-    }*/
-
-    //Ejecutar la función al cargar la página
-    /*updateScreenSize();
-    //Escuchar el evento de redimensionamiento (resize) de la ventana
-    window.addEventListener('resize', updateScreenSize);*/
 
     /*const btnMenu = document.getElementById("btn-menu-desplegable");
     const menuDesplegable = document.getElementById("menu-desplegable");

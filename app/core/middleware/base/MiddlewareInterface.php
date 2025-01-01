@@ -7,11 +7,11 @@
 
     interface MiddlewareInterface {
 
-        public function handler (Request $request, Response $response): void;
-
         public function setNext (MiddlewareInterface $next): void;
 
         public function next (Request $request, Response $response): void;
+
+        public function handler (Request $request, Response $response): void;
 
     }
 

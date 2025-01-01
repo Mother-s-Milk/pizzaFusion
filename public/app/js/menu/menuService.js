@@ -1,18 +1,25 @@
 let menuService = {
-    //Función para obtener todas las pizzas
-    getAllPizzas: () => {
-        return fetch("pizza/list") //Ajusta la URL según tu configuración
-            .then(response => {
-                //console.log("Respuesta completa del servidor:", response);
-                if (!response.ok) {
-                    throw new Error("Error en la respuesta del servidor");
-                }
-                //return response.text();
-                return response.json(); //Devuelve las pizzas como un JSON
+    obtenerPizzas: () => {
+        return fetch("menu/obtenerPizzas", {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json",
+            },
             })
-            .catch(error => {
-                console.error("ERROR EN LA PETICIÓN DE TODAS LAS PIZZAS", error);
-            });
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(response.status);
+              }
+              return response.json();
+            })
+            .then((data) => {
+              return data;
+              })
+              .catch((error) => {
+                console.error("Error en la petición: ", error);
+                throw error;
+              });
     },
     filterById: (filterId) => {
         return fetch(`pizza/filterById/${filterId}`) //Ajusta la URL según tu configuración
