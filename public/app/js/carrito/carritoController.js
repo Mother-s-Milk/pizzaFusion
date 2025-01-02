@@ -66,7 +66,7 @@ const carritoController = {
                         <td><img src="${producto.url}"></td>
                         <td>${producto.nombrePizza}</td>
                         <td>$${producto.precioPizza}</td>
-                        <td><button type="button" class="plus-minus" onclick="carritoController.restarUno(${producto.idPizza})"><i class="fa-solid fa-minus"></i></button><span class="cart-cantidad">${producto.cantidad}</span><button type="button" class="plus-minus" onclick="carritoController.agregarUno(${producto.idPizza})"><i class="fa-solid fa-plus"></i></button></td>
+                        <td class="agregar-borrar"><button type="button" class="plus-minus" onclick="carritoController.restarUno(${producto.idPizza})"><i class="fa-solid fa-minus"></i></button><span class="cart-cantidad">${producto.cantidad}</span><button type="button" class="plus-minus" onclick="carritoController.agregarUno(${producto.idPizza})"><i class="fa-solid fa-plus"></i></button></td>
                         <td>$${producto.precioPizza * producto.cantidad}</td>
                         <td><button type="button" class="btn-trash" onclick="carritoController.delete(${producto.idPizza})"><i class="fa-solid fa-trash-can"></i></button></td>
                     </tr>

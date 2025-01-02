@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = img.dataset.src;
     });
 
-    /*const btnMenu = document.getElementById("btn-menu-desplegable");
+    const btnMenu = document.getElementById("btn-menu-desplegable");
     const menuDesplegable = document.getElementById("menu-desplegable");
-    let interruptor = false;*/
+    let interruptor = false;
     /******************/
     /*Menú desplegable*/
     /******************/
     //Abrir menú
-    /*btnMenu.onclick = () => {
+    btnMenu.onclick = () => {
         if (!interruptor) {
             menuDesplegable.classList.add("show-menu");
             document.body.classList.add("no-scroll");
@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         interruptor = !interruptor;
-    };*/
+    };
 
     //Cerrar el menú al hacer clic en un enlace
-    /*let menuLinks = document.querySelectorAll("#menu-desplegable .links-nav a");
+    let menuLinks = document.querySelectorAll("#menu-desplegable .links-nav a");
     menuLinks.forEach(link => {
         link.onclick = closeMenu; //Usa la función de cerrar
     });
@@ -86,6 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.remove("no-scroll");
         btnMenu.innerHTML = '<i class="fa-solid fa-bars"></i>';
         //interruptor = false;
-    }*/
+    }
     
 });
