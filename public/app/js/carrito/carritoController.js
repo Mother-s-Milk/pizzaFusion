@@ -105,5 +105,55 @@ const carritoController = {
     restarUno: (id) => {
         carritoService.restarUno(id);
         carritoController.list();
+    },
+
+    enviarMensaje: () => {
+        const nombre = document.getElementById('nombre-envio').value;
+        const direccion = document.getElementById('direccion-envio').value;
+        const telefono = document.getElementById('telefono-envio').value;
+        const retiro = document.getElementById('retiro-envio').value;
+        const pago = document.getElementById('pago-envio').value;
+        let comentario = document.getElementById('comentario-envio').value;
+    
+        if (comentario === '') {
+            comentario = 'Sin Observaciones';
+        }
+    
+        if (nombre === '' || direccion === '' || telefono === '' || retiro === '' || pago === '') {
+            alert('Por favor complete todos los campos');
+            return;
+        }
+    
+        const productos = carritoService.list();
+        const detalleProductos = productos.map(item => `🍕 *${item.nombrePizza}* (x${item.cantidad}) - $${item.precioPizza}`).join('%0A');
+        
+        const precioTotal = productos.reduce((total, item) => total + (item.precioPizza * item.cantidad), 0);
+    
+        const mensaje = `*🍕 Pizza Fusión - Nuevo Pedido*%0A` +
+                `——————%0A` +
+                `*📋 Detalles del Pedido*%0A` +
+                `*👤 Nombre:* ${nombre}%0A` +
+                `*🏠 Dirección:* ${direccion}%0A` +
+                `*📞 Teléfono:* ${telefono}%0A` +
+                `*🚚 Retiro:* ${retiro}%0A` +
+                `*📝 Comentario:* ${comentario}%0A` +
+                `*💳 Pago:* ${pago}%0A` +
+                `——————%0A` +
+                `*🛒 Productos:*%0A${detalleProductos}%0A` +
+                `——————%0A` +
+                `*💰 Total a Pagar:* $${precioTotal}%0A` +
+                `——————%0A` +
+                `*✅ ¡Gracias por tu pedido! Te esperamos pronto.*%0A`;
+
+    
+        const numeroWhatsApp = '5492975488673'; // Reemplaza con el número de WhatsApp del negocio
+        const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+    
+        // Abrir WhatsApp
+        window.open(url, '_blank');
     }
+    
+    
+    
+
 }

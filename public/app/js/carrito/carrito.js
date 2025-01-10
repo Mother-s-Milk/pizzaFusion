@@ -59,6 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    let btnEnvio=document.getElementById('btn-pedir');
+    if(btnEnvio!=null){
+
+        btnEnvio.addEventListener('click',()=>{
+
+            carritoController.enviarMensaje();
+
+        })
+
+    }
+
+
     let modal = document.getElementById('pedido-modal');
     window.addEventListener('click', (event) => {
         if (event.target === modal) {

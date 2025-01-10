@@ -1,4 +1,4 @@
-<?php/*
+<?php
 
     require_once "../app/config/DBConfig.php";
     require_once "../app/vendor/autoload.php";
@@ -211,6 +211,6 @@
     }
     catch (PDOException $ex) {
         echo '<p>Error de conexión ' . $ex->getMessage() . '</p>';
-    }*/
+    }
 
 ?>

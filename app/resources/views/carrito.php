@@ -49,30 +49,30 @@
         </header>
         <form class="form-pedido">
             <div>
-                <input type="text" placeholder="Nombre">
+                <input type="text" value="Joel" placeholder="Nombre" id="nombre-envio">
             </div>
             <div>
-                <input type="text" placeholder="Dirección">
+                <input type="text" value="Eva Perón 252" placeholder="Dirección" id="direccion-envio">
             </div>
             <div>
-                <input type="text" placeholder="Teléfono">
+                <input type="text" value="2974735950" placeholder="Teléfono" id="telefono-envio">
             </div>
             <div>
-                <select name="" id="">
+                <select name="" id="retiro-envio">
                     <option value="" disabled selected hidden>Selecciona un tipo de pedido</option>
-                    <option value="">Retirar</option>
-                    <option value="">Delivery</option>
+                    <option value="Retirar">Retirar</option>
+                    <option value="Delivery">Delivery</option>
                 </select>
             </div>
             <div>
-                <select name="" id="">
+                <select name="" id="pago-envio">
                     <option value="" disabled selected hidden>Selecciona un medio de pago</option>
-                    <option value="">Efectivo</option>
-                    <option value="">Mercado Pago</option>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Transferencia">Mercado Pago</option>
                 </select>
             </div>
             <div>
-                <textarea name="" id="" placeholder="Comentario"></textarea>
+                <textarea name="" id="comentario-envio" placeholder="Comentario"></textarea>
             </div>
             <div>
                 <button type="button" class="btn btn-pedir" id="btn-pedir">Enviar</button>
