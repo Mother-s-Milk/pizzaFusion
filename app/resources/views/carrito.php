@@ -41,7 +41,6 @@
     </footer>
 </section>
 
-<!-- Modal formulario de envío -->
 <div id="pedido-modal" class="modal">
     <div class="pedido-modal-content">
         <header>

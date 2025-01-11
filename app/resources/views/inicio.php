@@ -26,12 +26,12 @@
 
 <section class="container section animation-section" id="promociones">
     <header class="header-section">
-        <h2>Las promociones que tenemos para vos...</h2>
+        <h2>Promociones para vos</h2>
     </header>
-    <div class="two">
+    <div class="seccion-promociones">
         <div class="tarjeta-promocion">
             <img src="../public/app/img/promo1.webp" alt="">
-            <div class="promotion-info">
+            <div class="promocion-info">
                 <h2>3 pizzas a partir de $10000</h2>
                 <p>Disfrutá de 3 de pizzas a elección</p>
                 <a href="menu" title="Explora nuestro menú" class="a-button" id="btn-hero">Pedir ahora</a>
@@ -39,7 +39,7 @@
         </div>
         <div class="tarjeta-promocion">
             <img src="../public/app/img/promo2.webp" alt="">
-            <div class="promotion-info">
+            <div class="promocion-info">
                 <h2>2 pizzas + bebida</h2>
                 <p>Pizza + Bebida para compartir</p>
                 <a href="menu" title="Explora nuestro menú" class="a-button" id="btn-hero">Pedir ahora</a>
@@ -56,7 +56,7 @@
     <header class="header-section">
         <h2>Nuestros Estilos</h2>
     </header>
-    <div class="three" style="justify-content: start;">
+    <div class="seccion-estilos">
         <a href="" class="pizza-link">
             <article class="pizza-tipo">
                 <img data-src="../public/app/img/clasica.webp" alt="Pizzas clásicas con ingredientes tradicionales" loading="lazy">
@@ -88,7 +88,7 @@
             </article>
         </a>
     </div>
-    <footer class="text-container" style="margin-top: 30px;">
+    <footer class="text-container">
         <p>Todas nuestras pizzas y acompañamientos están hechos con los ingredientes más frescos. ¡Convierte cualquier pizza en SIN GLUTEN con nuestra masa GF! También hacemos pizzas veganas con alternativas sin lácteos de alta calidad y deliciosas proteínas vegetales llenas de sabor.</p>
         <a href="menu" title="Explora nuestro menú" class="a-button btn-general" id="btn-hero">Ver todas</a>
     </footer>
@@ -102,13 +102,8 @@
     <header class="header-section">
         <h2>¿Dónde estamos?</h2>
     </header>
-    <div class="two" style="align-items: center;">
+    <div class="seccion-contacto">
         <div class="info-contacto">
-            <!-- <div class="logo">
-                <a href="inicio" title="Volver al inicio">
-                    <h1><span>Pizza</span><span>Fusión</span></h1>
-                </a>
-            </div> -->
             <p><i class="fa-solid fa-phone"></i>+54 383 4456789</p>
             <p><i class="fa-solid fa-location-dot"></i>Av. Virgen del Valle 504</p>
             <p><i class="fa-solid fa-envelope"></i>pizzaFusion@gmail.com</p>
@@ -118,6 +113,10 @@
         </div>
     </div>
 </section>
+
+<div class="divisor-container">
+    <hr class="divisor">
+</div>
 
 <section class="container section animation-section">
     <header class="header-section">

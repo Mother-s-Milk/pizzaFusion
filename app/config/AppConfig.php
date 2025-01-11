@@ -5,6 +5,7 @@
     define ("APP_URL", "http://localhost/pizzaFusion/public/");
 
     //Ruta absoluta en el servidor donde está ubicada la aplicación
+    //Ruta raíz del directorio principal del servidor web
     define ("APP_URI", $_SERVER["DOCUMENT_ROOT"] . "/pizzaFusion/app/");
 
     //Ruta a los templates

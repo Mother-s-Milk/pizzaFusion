@@ -26,7 +26,7 @@ let menuController = {
                 <div class="pizza-card">
                     <img src="${pizza.imgPath}" alt="${pizza.nombre}">
                     <h3>${pizza.nombre}</h3>
-                    <p>${pizza.descripcion}</p>
+                    <!--<p>${pizza.descripcion}</p>-->
                     <p>$${parseFloat(pizza.precio).toFixed(2)}</p>
                     <button type="button" class="btn-pizza-card" 
                         data-pizza-id="${pizza.id}" 
@@ -35,6 +35,14 @@ let menuController = {
                         data-pizza-imgPath="${pizza.imgPath}"
                         aria-label="Agregar ${pizza.nombre} al carrito">
                         Agregar
+                    </button>
+                    <button type="button" class="btn-pizza-card" 
+                        data-pizza-id="${pizza.id}" 
+                        data-pizza-nombre="${pizza.nombre}" 
+                        data-pizza-precio="${pizza.precio}"
+                        data-pizza-imgPath="${pizza.imgPath}"
+                        aria-label="Agregar ${pizza.nombre} al carrito">
+                        Ver más
                     </button>
                 </div>
             `;

@@ -1,19 +1,14 @@
 <footer class="principal-footer section">
     <div class="container">
-        <div class="footer-content three">
+        <div class="footer-content">
             <div class="newsletter-footer">
                 <h4>Newsletter</h4>
-                <form>
-                    <input type="email" name="" id="" required>
-                    <button type="button" aria-label="Suscribirse al newsletter"><i class="fa-solid fa-arrow-right"></i></button>
-                </form>
+                <div class="email-container">
+                    <input type="email" id="emailInput" placeholder="Ingresa tu correo" required/>
+                    <button type="button" aria-label="Suscribirse al newsletter" id=""><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
                 <p>Recibí promociones exclusivas y códigos de descuento</p>
             </div>
-            <ul>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-            </ul>
             <div class="logo-footer">
                 <div class="logo">
                     <a href="inicio" title="Volver al inicio">
@@ -28,14 +23,29 @@
                 </ul>
             </div>
         </div>
+        
+        <!-- <nav class="footer-nav">
+            <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                        <span>|</span>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <span>|</span>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav> -->
+        
+
         <hr class="footer-divisor">
+
         <div class="final-page">
             <div class="copy">
-                <p>©2024 PizzaFusión - Todos los derechos reservados</p>
+                <p>Copyright©2024 PizzaFusión - Todos los derechos reservados</p>
             </div>
             <div class="design">
                 <p>Diseñado y desarrollado por <a href="#">Franco Vera</a></p>
             </div>
         </div>
+
     </div>
+    
 </footer>

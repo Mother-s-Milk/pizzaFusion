@@ -6,7 +6,7 @@
 </section>
 
 <section class="container section">
-    <div class="two" style="align-items:center;">
+    <div class="tarjeta-historia" style="align-items:center;">
         <div class="about-details">
             <h2>Nuestra historia</h2>
             <p>Desde una pequeña cocina hasta convertirnos en uno de los favoritos de la comunidad, nuestro viaje ha estado lleno de dedicación, pasión y compromiso con la calidad.</p>
@@ -22,7 +22,7 @@
 </div>
 
 <section class="container section">
-    <div class="two" style="align-items:center;">
+    <div class="tarjeta-historia" style="align-items:center;">
         <div class="about-img">
             <img src="app/img/ingredientes.webp" alt="">
         </div>
@@ -37,12 +37,11 @@
     <hr class="divisor">
 </div>
 
-<!-- Equipo -->
 <section class="container section">
     <header class="header-section">
         <h2>Conoce a nuestro equipo</h2>
     </header>
-    <div class="three">
+    <div class="miembros">
         <article class="member">
             <img src="app/img/chef1.webp" alt="Chef Principal">
             <h3>Juan Pérez</h3>
@@ -66,7 +65,7 @@
 </div>
 
 <section class="container section">
-    <div class="two" style="align-items:center;">
+    <div class="tarjeta-historia" style="align-items:center;">
         <div class="about-details">
             <h2>El secreto detrás de nuestras pizzas</h2>
             <p>Todo comienza con nuestra receta secreta de masa, que fermenta por horas, y termina en el calor del horno de leña, aportando ese sabor ahumado único.</p>
@@ -81,9 +80,8 @@
     <hr class="divisor">
 </div>
 
-<!-- Compromiso -->
 <section class="container section">
-    <div class="two" style="align-items:center;">
+    <div class="tarjeta-historia" style="align-items:center;">
         <div class="about-img">
             <img src="app/img/sostenibilidad.webp" alt="">
         </div>

@@ -20,9 +20,8 @@
     <header class="header-section">
         <h2>Pizzas</h2>
     </header>
-    <div class="section-menu">
-        <aside class="aside-filter-menu">
-            <!-- <h2>Filtros:</h2> -->
+    <div class="seccion-menu">
+        <aside class="filtros">
             <ul>
                 <li><button type="button" class="filter-button active" data-filter="todas">Todas</button></li>
                 <li><button type="button" class="filter-button" data-filter="1">Clásicas</button></li>
@@ -34,11 +33,10 @@
         </aside>
         <section class="grid-menu" id="grid-pizza-menu">
         </section>
-    </div>
-    <!-- <div id="paginator">
+    <div id="paginator">
         <button id="prevPage" onclick="menuController.changePage(-1)" disabled>Anterior</button>
         <button id="nextPage" onclick="menuController.changePage(1)" disabled>Siguiente</button>
-    </div> -->
+    </div> 
 </section>
 
 <div id="toast-notification" class="toast-notification hidden">
